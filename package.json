@@ -1,9 +1,13 @@
 {
-  "name": "test",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "devDependencies": {
-    "cypress": "^6.5.0"
-  }
+    "name": "test",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "devDependencies": {
+        "cypress": "^6.5.0"
+    },
+    "scripts": {
+        "test:open": "cypress open",
+        "test:run": "cypress run"
+    }
 }
