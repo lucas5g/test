@@ -1,10 +1,11 @@
 {
-    "baseUrl": "https://version.aplicativoderestaurante.com.br",
+    "baseUrl2": "https://version.aplicativoderestaurante.com.br",
+    "baseUrl": "http://fomefome.loc",
     "viewportWidth": 1500,
     "viewportHeight": 860,
     "env": {
-        "CSRF": "a9aebeb9f9741103c9e9024d20d9a0018f5ba7aeacb8ed6359ae8a06bae451e0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_uAMtk4vXdV6nc12gHUV6oEl0F_hsUvn%22%3B%7D",
-        "PHPSESSID": "t4sfv9ahiqj4sg955c412vmpj3",
-        "FBP": "fb.2.1609939564532.1771032206"
+        "CSRF": "8ef79e4ae5bdceec37f5181c4866d427cb027792771264c2f6a708cb0492ec96a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22g1La1JQDBircEMR4M3WixKxN3Yz189sW%22%3B%7D",
+        "PHPSESSID": "c45a14833493700f08281f955348f320",
+        "FBP": "fb.1.1608700580544.1704358764"
     }
 }

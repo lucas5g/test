@@ -1,24 +1,23 @@
 Cypress.on('uncaught:exception', (err, runnable) => {
     return false;
 });
-describe('Login without ui', () => {
-    // const
-    // it('should able to login', () => {
-    //     cy.request({
-    //         url: 'https://version.aplicativoderestaurante.com.br/backend/web/admin/site/login',
-    //         method: 'POST',
-    //         body: JSON.stringify({
-    //             'LoginForm[admin_email]': 'admin@coficar.com.br',
-    //             'LoginForm[admin_password]': 'qweqwe',
-    //         })
-    //     })
-    //     .then(cy.visit('https://version.aplicativoderestaurante.com.br/backend/web/admin/site/index'))
-    // })
-    it('set cookie', () => {
-        cy.setCookie('_csrf', Cypress.env('CSRF'))
-        cy.setCookie('PHPSESSID', Cypress.env('PHPSESSID'))
-        cy.setCookie('_fbp', Cypress.env('FBP'))
+describe('The Login Page', () => {
+    it('Sets auth cookie when loggin in via form submission', () => {
 
-        cy.visit('https://version.aplicativoderestaurante.com.br/backend/web/admin/site/index')
+        cy.visit('/backend/web/login')
+
+        const user = {
+            email: 'admin@codificar.com.br',
+            password: 'qweqwe'
+        }
+        cy.get('#txtemail').type(user.email)
+        cy.get('#txtpassword').type(`${user.password}{enter}`)
+
+        cy.url().should('include', 'backend/web/admin/site/index')
+
+        cy.getCookie('_csrf').should('exist')
+
+
+
     })
 })
