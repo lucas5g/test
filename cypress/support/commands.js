@@ -10,6 +10,15 @@ Cypress.Commands.add("login", () => {
     cy.url().should('include', 'backend/web/admin/site/index')
 
     // cy.getCookie('_csrf').should('exist')
+    cy.getCookie('_csrf')
+        .then((cookie) => {
+            cy.log(cookie.value)
+        })
+
+    cy.getCookie('PHPSESSID')
+        .then((cookie) => {
+            cy.log(cookie.value)
+        })
 
     // cy.setCookie('_csrf', Cypress.env('CSRF'))
     // cy.setCookie('PHPSESSID', Cypress.env('PHPSESSID'))
@@ -25,4 +34,26 @@ Cypress.Commands.add('loginCustomer', () => {
     cy.get('#btn-signin').click()
 
     cy.visit('/')
+})
+
+Cypress.Commands.add('getCookies', () => {
+    cy.login()
+    cy.getCookie('_csrf')
+        .then((cookie) => {
+            cy.log(cookie.value)
+        })
+
+    cy.getCookie('PHPSESSID')
+        .then((cookie) => {
+            cy.log(cookie.value)
+        })
+
+
+})
+Cypress.Commands.add('loginTest', () => {
+    // cy.visit('backend/web/admin/site/index')
+
+    cy.setCookie('_csrf', Cypress.env('CSRF'))
+    cy.setCookie('PHPSESSID', Cypress.env('PHPSESSID'))
+    cy.setCookie('_fbp', Cypress.env('FBP'))
 })
