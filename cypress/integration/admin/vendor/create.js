@@ -85,7 +85,7 @@ describe('Vendor Create', () => {
 
     })
 
-    it('Informações', () => {
+    it.skip('Informações', () => {
         cy.get('#vendor-vendor_name').type('Teste')
         cy.get('#vendor-cnpj').type('46.799.955/0001-51')
         cy.get('#s2id_autogen1').type('Música')
@@ -95,7 +95,7 @@ describe('Vendor Create', () => {
         cy.get('.select2-result-label').click()
         cy.get('#vendor-pure_vegetarian > :nth-child(3)').click()
     })
-    it('Endereço', () => {
+    it.skip('Endereço', () => {
         cy.login()
 
         cy.get('#vendor-zipcode')

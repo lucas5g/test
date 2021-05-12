@@ -3,7 +3,7 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 });
 
 describe('My First Test', () => {
-    it('Visits the Kitchen Sink', () => {
+    it.skip('Visits the Kitchen Sink', () => {
         cy.visit('/')
 
         cy.contains('type').click()
