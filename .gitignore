@@ -1,5 +1,5 @@
 node_modules/
-cypress/videos/
+cypress/videos/*
 
 *.mp4
 *.jpg
