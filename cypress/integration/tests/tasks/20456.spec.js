@@ -3,7 +3,7 @@ Cypress.on('uncaught:exception', (err, runnable) => {
     return false;
 });
 
-describe('[Admin] - Atualizar outlet > Trocar texto Cadastrado por Atualizado', () => {
+describe('https://redmine.codificar.com.br/issues/20456 - [Admin] - Atualizar outlet > Trocar texto Cadastrado por Atualizado', () => {
     before(() => {
         // cy.visit('/backend/web/admin/banner/create')
         // cy.log('https://redmine.codificar.com.br/issues/20456')
