@@ -4,8 +4,8 @@
     "viewportWidth": 1200,
     "viewportHeight": 700,
     "env": {
-        "CSRF": "a1416ceefd88bf4e9cfa0fa6c4003a934c6c62b8cc347298393c39a85dc7a174a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22N0zrVC5FOuUDBkm1GQHpZsyt20U21VaU%22%3B%7D",
-        "PHPSESSID": "5526a849d29b6423be0ab2a110f3bf14",
+        "CSRF": "a0238b099dab24205c688b5ea928e0b97fa70f34e1d57ca374894dfadff53b2aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22zquloW7KUUgc--FpWEz5c0zEhxTzJBQJ%22%3B%7D",
+        "PHPSESSID": "c8a3cb4b5aab31279e5e23b69bc5ff92",
         "FBP": "fb.1.1608700580544.1704358764"
     },
     "video": false
